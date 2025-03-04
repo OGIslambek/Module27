@@ -1,0 +1,50 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <script src="../Static/JS/index.js"></script>
+    <header id="header-index">
+        <h1>LifeSpot — прямые трансляции с улиц</h1>
+        <p>Покажем, что происходит прямо сейчас</p>
+        <input type="text" oninput="filterContent()" placeholder="Поиск видео" />
+    </header>
+
+    <aside>
+        <div class="navbar">
+            <a href="/"><p>Все трансляции</p></a>
+            <a href="/about"><p>О проекте</p></a>
+        </div>
+    </aside>
+    <main>
+        <div style="padding:5% 1% 5%">
+            <script>
+                handleSession(logger, checker);
+                setTimeout(() =>
+                    alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Telegram @lifespot69!"),
+                    10000);
+            </script>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Лондон, автобусный маршрут</h3>
+        </div>
+    </main>
+    <footer>
+        <p>LifeSpot — видео трансляции</p>
+        <p>Создатель сайта: Белов Евгений Александович</p>
+    </footer>
+</body>
+</html>
