@@ -1,4 +1,4 @@
-п»їusing System.IO;
+using System.IO;
 using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -23,6 +23,8 @@ namespace LifeSpot
 
             app.UseEndpoints(endpoints =>
             {
+                // Маппинг статических файлов
+
                 endpoints.MapCss();
                 endpoints.MapJs();
                 endpoints.MapHtml();

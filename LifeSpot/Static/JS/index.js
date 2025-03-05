@@ -1,4 +1,4 @@
-﻿let checker = function (newVisit) {
+let checker = function(newVisit) {
     if (window.sessionStorage.getItem("userAge") >= 18) {
         if (newVisit) {
             alert("Приветствуем на LifeSpot! " + '\n' + "Текущее время: " + new Date().toLocaleString());
@@ -48,3 +48,5 @@ function filterContent() {
 const inputFunction = function () {
     return document.getElementsByTagName('input')[0].value.toLowerCase();
 }
+
+
